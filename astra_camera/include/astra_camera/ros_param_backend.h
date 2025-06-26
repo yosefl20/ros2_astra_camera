@@ -20,7 +20,7 @@ class ParametersBackend {
   explicit ParametersBackend(rclcpp::Node* node);
   ~ParametersBackend();
   void addOnSetParametersCallback(
-      rclcpp::node_interfaces::NodeParametersInterface::OnSetParametersCallbackType callback);
+      rclcpp::node_interfaces::NodeParametersInterface::OnParametersSetCallbackType callback);
 
  private:
   rclcpp::Node* node_;
